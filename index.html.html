@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MATFLIX - A melhor lista de canais, filmes e séries IPTV</title>
+    <meta name="description" content="Acesse a melhor plataforma IPTV com 24 horas de teste grátis. Filmes, séries e canais em alta qualidade. Teste agora o MATFLIX!">
+    <meta name='robots' content='max-image-preview:large' />
+    
+    <!-- Meta tags para redes sociais e previews -->
+    <meta property="og:title" content="MATFLIX - A melhor lista de canais, filmes e séries IPTV">
+    <meta property="og:description" content="Acesse a melhor plataforma IPTV com 24 horas de teste grátis. Filmes, séries e canais em alta qualidade.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meu-site-iptv-8zdr.vercel.app">
+    <meta property="og:image" content="https://meu-site-iptv-8zdr.vercel.app/matflix-logo.svg">
+    <meta property="og:site_name" content="MATFLIX">
+    
+    <!-- Meta tags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MATFLIX - A melhor lista de canais, filmes e séries IPTV">
+    <meta name="twitter:description" content="Acesse a melhor plataforma IPTV com 24 horas de teste grátis. Filmes, séries e canais em alta qualidade.">
+    <meta name="twitter:image" content="https://meu-site-iptv-8zdr.vercel.app/matflix-logo.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="matflix-logo.svg">
+    <link rel="shortcut icon" href="matflix-logo.svg">
+    <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+        
+        /* CSS Responsivo para Mobile e Tablets */
+        @media screen and (max-width: 768px) {
+            /* Container principal */
+            .elementor-container {
+                padding: 10px !important;
+                margin: 0 auto !important;
+            }
+            
+            /* Colunas responsivas */
+            .elementor-column {
+                width: 100% !important;
+                margin-bottom: 20px !important;
+            }
+            
+            /* Textos responsivos */
+            .elementor-heading-title {
+                font-size: 24px !important;
+                line-height: 1.3 !important;
+                text-align: center !important;
+                padding: 0 15px !important;
+            }
+            
+            /* Parágrafos */
+            .elementor-text-editor p {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+                text-align: center !important;
+                padding: 0 15px !important;
+            }
+            
+            /* Logos responsivas */
+            .elementor-widget-image img {
+                max-width: 200px !important;
+                height: auto !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+            
+            /* Botões responsivos */
+            /* Icon-boxes para telas muito pequenas */
+            .elementor-icon-box-title {
+                font-size: 16px !important;
+                line-height: 1.3 !important;
+                margin-bottom: 8px !important;
+                padding: 0 5px !important;
+            }
+            
+            .elementor-icon-box-description {
+                font-size: 13px !important;
+                line-height: 1.4 !important;
+                padding: 0 10px !important;
+            }
+            
+            .elementor-icon-box-wrapper {
+                padding: 10px !important;
+            }
+            
+            .elementor-widget-icon-box {
+                margin-bottom: 25px !important;
+            }
+            
+            .elementor-button {
+                width: 90% !important;
+                max-width: 300px !important;
+                margin: 10px auto !important;
+                display: block !important;
+                padding: 15px 20px !important;
+                font-size: 16px !important;
+                text-align: center !important;
+                background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+                border: none !important;
+                border-radius: 25px !important;
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3) !important;
+                transition: all 0.3s ease !important;
+                text-decoration: none !important;
+            }
+            
+            .elementor-button:hover {
+                background: linear-gradient(135deg, #128C7E 0%, #25D366 100%) !important;
+                transform: translateY(-2px) !important;
+                box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+            }
+            
+            .elementor-button-text {
+                color: #ffffff !important;
+                font-weight: bold !important;
+                font-size: 14px !important;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.2) !important;
+            }
+            
+            .elementor-button-content-wrapper {
+                color: #ffffff !important;
+            }
+            
+            .elementor-button-icon svg {
+                fill: #ffffff !important;
+            }
+            
+            /* Seções */
+            .elementor-section {
+                padding: 20px 0 !important;
+            }
+            
+            /* Widgets */
+            .elementor-widget {
+                margin-bottom: 20px !important;
+            }
+            
+            /* Icon-boxes responsivos */
+            .elementor-icon-box-title {
+                font-size: 18px !important;
+                line-height: 1.4 !important;
+                text-align: center !important;
+                margin-bottom: 10px !important;
+                word-wrap: break-word !important;
+                hyphens: auto !important;
+                padding: 0 10px !important;
+            }
+            
+            .elementor-icon-box-title span {
+                display: block !important;
+                word-break: break-word !important;
+                white-space: normal !important;
+            }
+            
+            .elementor-icon-box-description {
+                font-size: 14px !important;
+                line-height: 1.5 !important;
+                text-align: center !important;
+                padding: 0 15px !important;
+                margin-top: 10px !important;
+                word-wrap: break-word !important;
+            }
+            
+            .elementor-icon-box-wrapper {
+                text-align: center !important;
+                padding: 15px !important;
+            }
+            
+            .elementor-icon-box-icon {
+                margin-bottom: 15px !important;
+                text-align: center !important;
+            }
+            
+            /* Melhorar espaçamento entre elementos */
+            .elementor-widget-icon-box {
+                margin-bottom: 30px !important;
+            }
+            
+            /* Formulários */
+            .elementor-field-group {
+                margin-bottom: 15px !important;
+            }
+            
+            .elementor-field {
+                width: 100% !important;
+                padding: 12px !important;
+                font-size: 16px !important;
+            }
+        }
+        
+        /* CSS para Tablets */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .elementor-container {
+                padding: 15px !important;
+            }
+            
+            .elementor-heading-title {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+            }
+            
+            .elementor-text-editor p {
+                font-size: 18px !important;
+                line-height: 1.5 !important;
+            }
+            
+            .elementor-widget-image img {
+                max-width: 250px !important;
+                height: auto !important;
+            }
+            
+            .elementor-button {
+                padding: 12px 25px !important;
+                font-size: 16px !important;
+                width: 95% !important;
+                max-width: 280px !important;
+                border-radius: 20px !important;
+            }
+            
+            .elementor-button-text {
+                font-size: 15px !important;
+                font-weight: bold !important;
+            }
+        }
+        
+        /* CSS para dispositivos muito pequenos */
+        @media screen and (max-width: 480px) {
+            .elementor-heading-title {
+                font-size: 20px !important;
+                padding: 0 10px !important;
+            }
+            
+            .elementor-text-editor p {
+                font-size: 14px !important;
+                padding: 0 10px !important;
+            }
+            
+            .elementor-button {
+                padding: 14px 20px !important;
+                font-size: 15px !important;
+                width: 98% !important;
+                max-width: 250px !important;
+                border-radius: 18px !important;
+            }
+            
+            .elementor-button-text {
+                font-size: 14px !important;
+                font-weight: bold !important;
+            }
+            
+            .elementor-widget-image img {
+                max-width: 150px !important;
+            }
+            
+            .elementor-container {
+                padding: 5px !important;
+            }
+            
+            .elementor-section {
+                padding: 15px 0 !important;
+            }
+        }
+        
+        /* Melhorias gerais para touch */
+        @media (hover: none) and (pointer: coarse) {
+            .elementor-button {
+                min-height: 44px !important;
+                touch-action: manipulation !important;
+            }
+            
+            a, button {
+                touch-action: manipulation !important;
+            }
+        }
+        
+        /* Otimizações de fonte para mobile */
+        @media screen and (max-width: 768px) {
+            /* Melhor legibilidade em mobile */
+            body, p, div, span {
+                -webkit-text-size-adjust: 100% !important;
+                text-size-adjust: 100% !important;
+                -webkit-font-smoothing: antialiased !important;
+                -moz-osx-font-smoothing: grayscale !important;
+            }
+            
+            /* Títulos principais */
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: bold !important;
+                margin-bottom: 15px !important;
+                word-wrap: break-word !important;
+                hyphens: auto !important;
+            }
+            
+            /* Texto de botões */
+            .elementor-button-text {
+                font-size: 16px !important;
+                font-weight: 600 !important;
+                letter-spacing: 0.5px !important;
+            }
+            
+            /* Links */
+            a {
+                color: #ff6b35 !important;
+                text-decoration: none !important;
+                font-weight: 500 !important;
+            }
+            
+            /* Texto em destaque */
+            .elementor-widget-heading .elementor-heading-title {
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+                font-weight: 700 !important;
+            }
+        }
+        
+        /* Fontes para iPhone específico */
+         @media screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+             .elementor-heading-title {
+                 font-size: 22px !important;
+                 line-height: 1.2 !important;
+             }
+             
+             .elementor-text-editor p {
+                 font-size: 15px !important;
+                 line-height: 1.4 !important;
+             }
+         }
+         
+         /* Otimizações específicas para logos MATFLIX em mobile */
+          @media screen and (max-width: 768px) {
+              /* Logo horizontal no cabeçalho */
+              img[src*="matflix-logo-horizontal"] {
+                  max-width: 280px !important;
+                  height: auto !important;
+                  margin: 15px auto !important;
+                  display: block !important;
+              }
+              
+              /* Logo quadrada */
+              img[src*="matflix-logo-square"] {
+                  max-width: 200px !important;
+                  height: auto !important;
+                  margin: 20px auto !important;
+                  display: block !important;
+              }
+              
+              /* Container das logos */
+              .elementor-widget-image {
+                  text-align: center !important;
+                  padding: 15px !important;
+              }
+          }
+         
+         /* Logos para tablets */
+         @media screen and (min-width: 769px) and (max-width: 1024px) {
+             img[src*="matflix-logo-horizontal"] {
+                 max-width: 220px !important;
+                 height: auto !important;
+             }
+             
+             img[src*="matflix-logo-square"] {
+                 max-width: 160px !important;
+                 height: auto !important;
+             }
+         }
+         
+         /* Logos para dispositivos muito pequenos */
+         @media screen and (max-width: 480px) {
+             img[src*="matflix-logo-horizontal"] {
+                 max-width: 220px !important;
+                 margin: 12px auto !important;
+             }
+             
+             img[src*="matflix-logo-square"] {
+                 max-width: 160px !important;
+                 margin: 15px auto !important;
+             }
+         }
+    </style>
+    <link rel="alternate" type="application/rss+xml" title="Feed para Landing Page IPTV-COD-IP1010 &raquo;" href="https://temastotal.com.br/wordpress/iptv/IP1010/index.php/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Feed de comentários para Landing Page IPTV-COD-IP1010 &raquo;" href="https://temastotal.com.br/wordpress/iptv/IP1010/index.php/comments/feed/" />
+    <script>
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !n(e, "\ud83d\udc26\u200d\ud83d\udd25", "\ud83d\udc26\u200b\ud83d\udd25")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function(e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+                    n.DOMReady = !0
+                }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+    </script>
+    <style id='wp-emoji-styles-inline-css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='nta-css-popup-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/whatsapp-Loja-dos-scripts/assets/dist/css/style.css?ver=6.8.1' media='all' />
+    <style id='global-styles-inline-css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :root {
+            --wp--style--global--content-size: 800px;
+            --wp--style--global--wide-size: 1200px;
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: 24px;
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: 24px;
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: 24px;
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        a:where(:not(.wp-element-button)) {
+            text-decoration: underline;
+        }
+
+        :root :where(.wp-element-button, .wp-block-button__link) {
+            background-color: #32373c;
+            border-width: 0;
+            color: #fff;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            padding: calc(0.667em + 2px) calc(1.333em + 2px);
+            text-decoration: none;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='hello-elementor-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all' />
+    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.4' media='all' />
+    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.4' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='elementor-post-13-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/css/post-13.css?ver=1750641480' media='all' />
+    <link rel='stylesheet' id='widget-spacer-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='widget-image-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='widget-heading-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='widget-icon-box-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='widget-icon-list-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='widget-toggle-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/css/widget-toggle.min.css?ver=3.29.2' media='all' />
+    <link rel='stylesheet' id='elementor-post-88-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/css/post-88.css?ver=1750641480' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742388227' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742388235' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-anton-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/google-fonts/css/anton.css?ver=1742388235' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-robotocondensed-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/google-fonts/css/robotocondensed.css?ver=1742388250' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-opensans-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/google-fonts/css/opensans.css?ver=1742388265' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-montserrat-css' href='https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1742388276' media='all' />
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <link rel="https://api.w.org/" href="https://temastotal.com.br/wordpress/iptv/IP1010/index.php/wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="https://temastotal.com.br/wordpress/iptv/IP1010/index.php/wp-json/wp/v2/pages/88" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://temastotal.com.br/wordpress/iptv/IP1010/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.8.1" />
+    <link rel="canonical" href="https://temastotal.com.br/wordpress/iptv/IP1010/" />
+    <link rel='shortlink' href='https://temastotal.com.br/wordpress/iptv/IP1010/' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://temastotal.com.br/wordpress/iptv/IP1010/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemastotal.com.br%2Fwordpress%2Fiptv%2FIP1010%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://temastotal.com.br/wordpress/iptv/IP1010/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemastotal.com.br%2Fwordpress%2Fiptv%2FIP1010%2F&#038;format=xml" />
+    <meta name="generator" content="Elementor 3.29.2; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <style>
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+            background-image: none !important;
+        }
+
+        @media screen and (max-height: 1024px) {
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+
+        @media screen and (max-height: 640px) {
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/2024/06/cropped-iptv-logo-loja-dos-scripts-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/2024/06/cropped-iptv-logo-loja-dos-scripts-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/2024/06/cropped-iptv-logo-loja-dos-scripts-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/uploads/2024/06/cropped-iptv-logo-loja-dos-scripts-270x270.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+</head>
+
+<body class="home wp-singular page-template page-template-elementor_canvas page page-id-88 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-13 elementor-page elementor-page-88">
+    <div data-elementor-type="wp-page" data-elementor-id="88" class="elementor elementor-88" data-elementor-post-type="page">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-461ab2f1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="461ab2f1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6d0d4a1f" data-id="6d0d4a1f" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-44dee0ac elementor-widget elementor-widget-spacer" data-id="44dee0ac" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-spacer">
+                                    <div class="elementor-spacer-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-97028aa e-grid e-con-full e-con e-parent" data-id="97028aa" data-element_type="container">
+                            <div class="elementor-element elementor-element-84065f9 elementor-widget elementor-widget-image" data-id="84065f9" data-element_type="widget" data-widget_type="image.default">
+                                <div class="elementor-widget-container">
+                                    <img fetchpriority="high" decoding="async" width="800" height="266" src="matflix-logo-horizontal.svg" class="attachment-large size-large wp-image-143" alt="MATFLIX Logo" style="max-width: 350px; height: auto; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));" /> </div>
+                            </div>
+                            <div class="elementor-element elementor-element-98dc6c6 elementor-widget elementor-widget-heading" data-id="98dc6c6" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h2 class="elementor-heading-title elementor-size-default"> </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-59a53a8d elementor-widget elementor-widget-heading" data-id="59a53a8d" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default"><span style="font-weight: normal">ASSIS</span>TA SEUS PROGRAMAS FAVORITOS SEM TRAVAMENTO<br></h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-33a9126 elementor-widget elementor-widget-heading" data-id="33a9126" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default"><span style="color:#ffff;background-color:#FF3C00">A MELHOR LISTA DE CANAIS FILMES E SÉRIES</span> O UNICO COM 24 HORAS DE TESTE
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-1eb1b710 elementor-widget elementor-widget-text-editor" data-id="1eb1b710" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-element elementor-element-539f9320 elementor-widget elementor-widget-text-editor" data-id="539f9320" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p style="text-align: left;"><span style="color: #ffffff;">Quer assistir tudo o que quiser ? A matflix tem a solução pra Você  </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-66bd96af elementor-widget elementor-widget-elementskit-dual-button" data-id="66bd96af" data-element_type="widget" data-widget_type="elementskit-dual-button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="ekit-wid-con">
+                                            <div class="ekit-element-align-wrapper">
+                                                <div class="ekit_double_button"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-38034ad7 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="38034ad7" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-button-wrapper">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5512981655502?text=Olá! Gostaria de solicitar meu teste de 24 horas do IPTV. Podem me ajudar?" target="_blank" id="botaum">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO MEU TESTE DE 24 HORAS</span>
+					</span>
+					</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-6de413da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6de413da" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-background-overlay"></div>
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-166c656a" data-id="166c656a" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-36aba8f7" data-id="36aba8f7" data-element_type="column">
+                    <div class="elementor-widget-wrap">
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1a60cf65" data-id="1a60cf65" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-77abfca6 elementor-widget elementor-widget-heading" data-id="77abfca6" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Assista Onde Quiser
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-6ac2a15 elementor-widget elementor-widget-text-editor" data-id="6ac2a15" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <p style="text-align: center;"><span style="color: #ffffff;">A matflix Play oferece um aplicativo totalmente exclusivo para você. Basta baixa-lo e assistir tudo o que quiser e quando quiser.</span></p>
+                            </div>
+                        </div>
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-48c94242 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48c94242" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1cd54ad3" data-id="1cd54ad3" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-1223cc9e elementor-view-framed elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="1223cc9e" data-element_type="widget"
+                                            data-widget_type="icon-box.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-box-wrapper">
+
+                                                    <div class="elementor-icon-box-icon">
+                                                        <span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-trophy" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"></path></svg>				</span>
+                                                    </div>
+
+                                                    <div class="elementor-icon-box-content">
+
+                                                        <h5 class="elementor-icon-box-title">
+                                                            <span>
+							+100 Mil Conteúdos						</span>
+                                                        </h5>
+
+                                                        <p class="elementor-icon-box-description">
+                                                            Em nosso Aplicativo você pode assistir todos os filmes que deseja
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-e15a1bc elementor-view-framed elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="e15a1bc" data-element_type="widget"
+                                            data-widget_type="icon-box.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-box-wrapper">
+
+                                                    <div class="elementor-icon-box-icon">
+                                                        <span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-theater-masks" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M206.86 245.15c-35.88 10.45-59.95 41.2-57.53 74.1 11.4-12.72 28.81-23.7 49.9-30.92l7.63-43.18zM95.81 295L64.08 115.49c-.29-1.62.28-2.62.24-2.65 57.76-32.06 123.12-49.01 189.01-49.01 1.61 0 3.23.17 4.85.19 13.95-13.47 31.73-22.83 51.59-26 18.89-3.02 38.05-4.55 57.18-5.32-9.99-13.95-24.48-24.23-41.77-27C301.27 1.89 277.24 0 253.32 0 176.66 0 101.02 19.42 33.2 57.06 9.03 70.48-3.92 98.48 1.05 126.58l31.73 179.51c14.23 80.52 136.33 142.08 204.45 142.08 3.59 0 6.75-.46 10.01-.8-13.52-17.08-28.94-40.48-39.5-67.58-47.61-12.98-106.06-51.62-111.93-84.79zm97.55-137.46c-.73-4.12-2.23-7.87-4.07-11.4-8.25 8.91-20.67 15.75-35.32 18.32-14.65 2.58-28.67.4-39.48-5.17-.52 3.94-.64 7.98.09 12.1 3.84 21.7 24.58 36.19 46.34 32.37 21.75-3.82 36.28-24.52 32.44-46.22zM606.8 120.9c-88.98-49.38-191.43-67.41-291.98-51.35-27.31 4.36-49.08 26.26-54.04 54.36l-31.73 179.51c-15.39 87.05 95.28 196.27 158.31 207.35 63.03 11.09 204.47-53.79 219.86-140.84l31.73-179.51c4.97-28.11-7.98-56.11-32.15-69.52zm-273.24 96.8c3.84-21.7 24.58-36.19 46.34-32.36 21.76 3.83 36.28 24.52 32.45 46.22-.73 4.12-2.23 7.87-4.07 11.4-8.25-8.91-20.67-15.75-35.32-18.32-14.65-2.58-28.67-.4-39.48 5.17-.53-3.95-.65-7.99.08-12.11zm70.47 198.76c-55.68-9.79-93.52-59.27-89.04-112.9 20.6 25.54 56.21 46.17 99.49 53.78 43.28 7.61 83.82.37 111.93-16.6-14.18 51.94-66.71 85.51-122.38 75.72zm130.3-151.34c-8.25-8.91-20.68-15.75-35.33-18.32-14.65-2.58-28.67-.4-39.48 5.17-.52-3.94-.64-7.98.09-12.1 3.84-21.7 24.58-36.19 46.34-32.37 21.75 3.83 36.28 24.52 32.45 46.22-.73 4.13-2.23 7.88-4.07 11.4z"></path></svg>				</span>
+                                                    </div>
+
+                                                    <div class="elementor-icon-box-content">
+
+                                                        <h5 class="elementor-icon-box-title">
+                                                            <span>
+							Todos os tipos de Séries						</span>
+                                                        </h5>
+
+                                                        <p class="elementor-icon-box-description">
+                                                            Nosso App oferece todos os tipos de Séries, basta escolher qual quer assistir
+
+
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-6bd41f elementor-view-framed elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="6bd41f" data-element_type="widget"
+                                            data-widget_type="icon-box.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-box-wrapper">
+
+                                                    <div class="elementor-icon-box-icon">
+                                                        <span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chalkboard-teacher" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path></svg>				</span>
+                                                    </div>
+
+                                                    <div class="elementor-icon-box-content">
+
+                                                        <h5 class="elementor-icon-box-title">
+                                                            <span>
+							Canais Abertos e Fechados						</span>
+                                                        </h5>
+
+                                                        <p class="elementor-icon-box-description">
+                                                            Oferecemos todos os Canais Abertos e Fechados, sem travamentos
+
+
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-4b0f792f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4b0f792f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-67c3d989" data-id="67c3d989" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-7afdaa3e elementor-widget elementor-widget-heading" data-id="7afdaa3e" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">A MELHOR SOLUÇÃO ESTÁ AQUI NO VINTE PILA </h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-1ff99bf9 elementor-widget elementor-widget-heading" data-id="1ff99bf9" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default"></h2>
+                            </div>
+                        </div>
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-4bff792b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bff792b" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-53c40e32" data-id="53c40e32" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-3ce5dcbe elementor-view-default elementor-widget elementor-widget-icon" data-id="3ce5dcbe" data-element_type="widget" data-widget_type="icon.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-wrapper">
+                                                    <div class="elementor-icon">
+                                                        <svg aria-hidden="true" class="e-font-icon-svg e-far-thumbs-up" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z"></path></svg>                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-2b3e146a elementor-widget elementor-widget-heading" data-id="2b3e146a" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Proteção
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-4fb96bba elementor-widget elementor-widget-text-editor" data-id="4fb96bba" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>Estamos sempre atentos as novas tecnologias de proteção para prestarmos o melhor produto.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-58703dd3" data-id="58703dd3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-37f5951b elementor-view-default elementor-widget elementor-widget-icon" data-id="37f5951b" data-element_type="widget" data-widget_type="icon.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-wrapper">
+                                                    <div class="elementor-icon">
+                                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-comment-dollar" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C114.62 32 0 125.12 0 240c0 49.56 21.41 95.01 57.02 130.74C44.46 421.05 2.7 465.97 2.2 466.5A7.995 7.995 0 0 0 8 480c66.26 0 115.99-31.75 140.6-51.38C181.29 440.93 217.59 448 256 448c141.38 0 256-93.12 256-208S397.38 32 256 32zm24 302.44V352c0 8.84-7.16 16-16 16h-16c-8.84 0-16-7.16-16-16v-17.73c-11.42-1.35-22.28-5.19-31.78-11.46-6.22-4.11-6.82-13.11-1.55-18.38l17.52-17.52c3.74-3.74 9.31-4.24 14.11-2.03 3.18 1.46 6.66 2.22 10.26 2.22h32.78c4.66 0 8.44-3.78 8.44-8.42 0-3.75-2.52-7.08-6.12-8.11l-50.07-14.3c-22.25-6.35-40.01-24.71-42.91-47.67-4.05-32.07 19.03-59.43 49.32-63.05V128c0-8.84 7.16-16 16-16h16c8.84 0 16 7.16 16 16v17.73c11.42 1.35 22.28 5.19 31.78 11.46 6.22 4.11 6.82 13.11 1.55 18.38l-17.52 17.52c-3.74 3.74-9.31 4.24-14.11 2.03a24.516 24.516 0 0 0-10.26-2.22h-32.78c-4.66 0-8.44 3.78-8.44 8.42 0 3.75 2.52 7.08 6.12 8.11l50.07 14.3c22.25 6.36 40.01 24.71 42.91 47.67 4.05 32.06-19.03 59.42-49.32 63.04z"></path></svg>                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-22eb1214 elementor-widget elementor-widget-heading" data-id="22eb1214" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Pagamento
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-57933e89 elementor-widget elementor-widget-text-editor" data-id="57933e89" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>Se você procura rapidez, está no lugar certo. Em poucos minutos os canais estarão 100% liberados para você </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5e1bace0" data-id="5e1bace0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-4710e14f elementor-view-default elementor-widget elementor-widget-icon" data-id="4710e14f" data-element_type="widget" data-widget_type="icon.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-wrapper">
+                                                    <div class="elementor-icon">
+                                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-laptop" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg>                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-3622424c elementor-widget elementor-widget-heading" data-id="3622424c" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Suporte Técnico
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-6a4e4701 elementor-widget elementor-widget-text-editor" data-id="6a4e4701" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>Equipe pronta para lhe atender 24 horas. Você pode optar o suporte técnico via Ticket e Chat ao Vivo.</p>
+                                                <p> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7bfec2ee" data-id="7bfec2ee" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-d2d0619 elementor-view-default elementor-widget elementor-widget-icon" data-id="d2d0619" data-element_type="widget" data-widget_type="icon.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-icon-wrapper">
+                                                    <div class="elementor-icon">
+                                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-laptop-house" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M272,288H208a16,16,0,0,1-16-16V208a16,16,0,0,1,16-16h64a16,16,0,0,1,16,16v37.12C299.11,232.24,315,224,332.8,224H469.74l6.65-7.53A16.51,16.51,0,0,0,480,207a16.31,16.31,0,0,0-4.75-10.61L416,144V48a16,16,0,0,0-16-16H368a16,16,0,0,0-16,16V87.3L263.5,8.92C258,4,247.45,0,240.05,0s-17.93,4-23.47,8.92L4.78,196.42A16.15,16.15,0,0,0,0,207a16.4,16.4,0,0,0,3.55,9.39L22.34,237.7A16.22,16.22,0,0,0,33,242.48,16.51,16.51,0,0,0,42.34,239L64,219.88V384a32,32,0,0,0,32,32H272ZM629.33,448H592V288c0-17.67-12.89-32-28.8-32H332.8c-15.91,0-28.8,14.33-28.8,32V448H266.67A10.67,10.67,0,0,0,256,458.67v10.66A42.82,42.82,0,0,0,298.6,512H597.4A42.82,42.82,0,0,0,640,469.33V458.67A10.67,10.67,0,0,0,629.33,448ZM544,448H352V304H544Z"></path></svg>                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-6850afbd elementor-widget elementor-widget-heading" data-id="6850afbd" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Servidores </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-7b9bad3c elementor-widget elementor-widget-text-editor" data-id="7b9bad3c" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>Nós possuímos os melhores servidores para que você tenha uma programação de qualidade e sem risco de travamento.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-22d8dc62 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="22d8dc62" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51975825" data-id="51975825" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <!-- Vídeo do YouTube -->
+                        <div class="elementor-element elementor-widget elementor-widget-video" style="margin-bottom: 30px;">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-video-wrapper" style="text-align: center;">
+                                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZiDphkXCZsQ?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 800px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="elementor-element elementor-element-41c649f1 elementor-mobile-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="41c649f1" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-button-wrapper">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5512981655502?text=Olá! Gostaria de solicitar meu teste de 24 horas do IPTV. Podem me ajudar?" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO MEU TESTE DE 24 HORAS</span>
+					</span>
+					</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-64431bd7 elementor-widget elementor-widget-heading" data-id="64431bd7" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">CONHEÇA OS <span style="color:#ff4800">Nossos Planos</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-42a56d85 elementor-widget elementor-widget-text-editor" data-id="42a56d85" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-element elementor-element-3c8e83dc elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="3c8e83dc" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p style="text-align: center;"><span style="color: #ffffff;">Faça parte dessa familia hoje mesmo. Planos sem fidelidade de forma pré-paga, sem surpresas e de maneira simples.</span></p>
+                                    </div>
+                                </div>
+                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-2d8d1e26 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2d8d1e26" data-element_type="section">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-43fd88d7" data-id="43fd88d7" data-element_type="column" data-settings="{">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-2cff2e2a elementor-widget elementor-widget-heading" data-id="2cff2e2a" data-element_type="widget" data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-5988c205 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5988c205" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-50fd139c" data-id="50fd139c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-1be1d81a elementor-widget elementor-widget-heading" data-id="1be1d81a" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Plano Mensal
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-74fad0c2 elementor-widget elementor-widget-text-editor" data-id="74fad0c2" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p><span style="color: #ff6600;">R$19,90</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-6a98fc06 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6a98fc06" data-element_type="widget" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">1 Tela</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">+100.000 Conteúdo</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Qualidade HD/SD</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Guia de Programação [EPG]</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Assista no Smartphone</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Assista no Computador</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Pacote Filmes e Séries</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-6fa851a3 elementor-align-center elementor-widget elementor-widget-button" data-id="6fa851a3" data-element_type="widget" data-widget_type="button.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-button-wrapper">
+                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/kSxb4ba" target="_blank" id="botaum">
+						<span class="elementor-button-content-wrapper">
+
+									<span class="elementor-button-text">CONTRATAR PLANO</span>
+					</span>
+					</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-31879cfb" data-id="31879cfb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-42da64bc elementor-widget elementor-widget-heading" data-id="42da64bc" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Plano Trimestral
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-551f03d2 elementor-widget elementor-widget-text-editor" data-id="551f03d2" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p><span style="color: #ff6600;">R$49,90</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-35459942 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="35459942" data-element_type="widget" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">2 Tela</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">+100.000 Conteúdo</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Qualidade HD/SD</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Guia de Programação [EPG]</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Assista no Smartphone</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Assista no Computador</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Pacote Filmes e Séries</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-3e1077b6 elementor-align-center elementor-widget elementor-widget-button" data-id="3e1077b6" data-element_type="widget" data-widget_type="button.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-button-wrapper">
+                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/fPFzQA8" target="_blank" id="botaum">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+									<span class="elementor-button-text">CONTRATAR PLANO</span>
+					</span>
+					</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-11a4bb27" data-id="11a4bb27" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-51187c19 elementor-widget elementor-widget-heading" data-id="51187c19" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Plano Anual
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-690b7c1e elementor-widget elementor-widget-text-editor" data-id="690b7c1e" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p><span style="color: #ff6600;">R$79,90</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-6d42864f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6d42864f" data-element_type="widget" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">3 Tela</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">+100.000 Conteúdo</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Qualidade HD/SD</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Guia de Programação [EPG]</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Assista no Smartphone</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Assista no Computador</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+                                                        <span class="elementor-icon-list-text">Pacote Filmes e Séries</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-124d2c52 elementor-align-center elementor-widget elementor-widget-button" data-id="124d2c52" data-element_type="widget" data-widget_type="button.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-button-wrapper">
+                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/qBdU9nL" target="_blank" id="botaum">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">CONTRATAR PLANO</span>
+					</span>
+					</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-3eb33f58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3eb33f58" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6a3b50ad" data-id="6a3b50ad" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-16053c43 elementor-widget elementor-widget-heading" data-id="16053c43" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">DÚVIDAS FREQUENTES</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-19b4d437 elementor-widget elementor-widget-toggle" data-id="19b4d437" data-element_type="widget" data-widget_type="toggle.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-toggle">
+                                    <div class="elementor-toggle-item">
+                                        <div id="elementor-tab-title-4311" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-4311" aria-expanded="false">
+                                            <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><svg class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></span>
+                                            <span class="elementor-toggle-icon-opened"><svg class="elementor-toggle-icon-opened e-font-icon-svg e-fas-caret-up" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></span>
+                                            </span>
+                                            <a class="elementor-toggle-title" tabindex="0">Métodos de pagamento disponíveis?</a>
+                                        </div>
+
+                                        <div id="elementor-tab-content-4311" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-4311">
+                                            <div class="elementor-accordion-item">
+                                                <div id="elementor-tab-content-2041" class="elementor-tab-content elementor-clearfix elementor-active" role="tabpanel" data-tab="1" aria-labelledby="elementor-tab-title-2041">
+                                                   <p><span style="color: #ffffff;"><span style="color: #ff6600;">Cartão de crédito </span><br /></span>
+                                                    </p>
+                                                    <p>Pagamento via pix</p>
+                                                    <p>Mercado Pago</p>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-accordion-item">
+                                                <div id="elementor-tab-title-2042" class="elementor-tab-title" role="tab" data-tab="2" aria-controls="elementor-tab-content-2042" aria-expanded="false"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-toggle-item">
+                                        <div id="elementor-tab-title-4312" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-4312" aria-expanded="false">
+                                            <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><svg class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></span>
+                                            <span class="elementor-toggle-icon-opened"><svg class="elementor-toggle-icon-opened e-font-icon-svg e-fas-caret-up" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></span>
+                                            </span>
+                                            <a class="elementor-toggle-title" tabindex="0"> Quais dispositivos podem ser usados ​​para IPTV?</a>
+                                        </div>
+
+                                        <div id="elementor-tab-content-4312" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-4312">
+                                            <div class="elementor-accordion-item">
+                                                <div id="elementor-tab-content-2042" class="elementor-tab-content elementor-clearfix elementor-active" role="tabpanel" data-tab="2" aria-labelledby="elementor-tab-title-2042">
+                                                    <p>Nossos serviços de IPTV são acessíveis através de todos os dispositivos smart TV (Samsung, Sony, LG…), todos os dispositivos Android (telefones), Apple TV, iPhone, Google Chromecast, caixa MAG no aplicativo
+                                                        emulador STB e FireStick</p>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-accordion-item">
+                                                <div id="elementor-tab-title-2043" class="elementor-tab-title" role="tab" data-tab="3" aria-controls="elementor-tab-content-2043" aria-expanded="false"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-toggle-item">
+                                        <div id="elementor-tab-title-4313" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-4313" aria-expanded="false">
+                                            <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><svg class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></span>
+                                            <span class="elementor-toggle-icon-opened"><svg class="elementor-toggle-icon-opened e-font-icon-svg e-fas-caret-up" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></span>
+                                            </span>
+                                            <a class="elementor-toggle-title" tabindex="0"> Velocidade de internet recomendada?</a>
+                                        </div>
+
+                                        <div id="elementor-tab-content-4313" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-4313">
+                                            <div class="elementor-accordion-item">
+                                                <div id="elementor-tab-content-2043" class="elementor-tab-content elementor-clearfix elementor-active" role="tabpanel" data-tab="3" aria-labelledby="elementor-tab-title-2043">
+                                                    <div id="elementor-tab-content-1533" class="elementor-tab-content elementor-clearfix elementor-active" role="region" data-tab="3" aria-labelledby="elementor-tab-title-1533">
+                                                        <p>Se a velocidade de download não for inferior a 30 Mbps, tudo funcionará sem problemas na mais alta qualidade. Se você não tiver certeza, peça um teste de 1 dia para testar a qualidade primeiro.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-accordion-item">
+                                                <div id="elementor-tab-title-2044" class="elementor-tab-title" role="tab" data-tab="4" aria-controls="elementor-tab-content-2044" aria-expanded="false"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-toggle-item">
+                                        <div id="elementor-tab-title-4314" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-4314" aria-expanded="false">
+                                            <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><svg class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></span>
+                                            <span class="elementor-toggle-icon-opened"><svg class="elementor-toggle-icon-opened e-font-icon-svg e-fas-caret-up" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></span>
+                                            </span>
+                                            <a class="elementor-toggle-title" tabindex="0"> Quais países estão presentes? </a>
+                                        </div>
+
+                                        <div id="elementor-tab-content-4314" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-4314">
+                                            <p>Holanda Bélgica França Reino Unido Suíça Áustria Polônia Espanha Malta Portugal Itália EUA Canadá Austrália Nova Zelândia Árabe Índia Paquistão Irã Turquia Azerbaycan Curdistão África Afeganistão Armênia Exyu
+                                                Eslovênia Albânia Grécia Latina Brasil Caribe Suriname Suécia Dinamarca Noruega Finlândia Tcheca Bulgária Romênia Hungria Rússia Geórgia/Cazaque Ucrânia Lituânia Letônia Estônia China/HK Malásia Filipinas
+                                                Indonésia Coréia Tailândia Taiwan Vietnã</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-toggle-item">
+                                        <div id="elementor-tab-title-4315" class="elementor-tab-title" data-tab="5" role="button" aria-controls="elementor-tab-content-4315" aria-expanded="false">
+                                            <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><svg class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></span>
+                                            <span class="elementor-toggle-icon-opened"><svg class="elementor-toggle-icon-opened e-font-icon-svg e-fas-caret-up" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></span>
+                                            </span>
+                                            <a class="elementor-toggle-title" tabindex="0">Quantas conexões ao mesmo tempo?</a>
+                                        </div>
+
+                                        <div id="elementor-tab-content-4315" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-4315">
+                                            <p>Você pode instalar sua conta em vários dispositivos, mas lembre-se de que ela funciona em um de cada vez.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-toggle-item">
+                                        <div id="elementor-tab-title-4316" class="elementor-tab-title" data-tab="6" role="button" aria-controls="elementor-tab-content-4316" aria-expanded="false">
+                                            <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><svg class="e-font-icon-svg e-fas-caret-right" viewBox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></span>
+                                            <span class="elementor-toggle-icon-opened"><svg class="elementor-toggle-icon-opened e-font-icon-svg e-fas-caret-up" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></span>
+                                            </span>
+                                            <a class="elementor-toggle-title" tabindex="0"> Como posso testar o serviço IPTV? </a>
+                                        </div>
+
+                                        <div id="elementor-tab-content-4316" class="elementor-tab-content elementor-clearfix" data-tab="6" role="region" aria-labelledby="elementor-tab-title-4316">
+                                            <p>Oferecemos um teste gratuito de 24 horas. Com ele você poderá assistir a todos os canais disponíveis em nossos pacotes de IPTV, canais adultos (excl. on demand) filmes e séries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-5777b3b9 elementor-align-center elementor-widget elementor-widget-button" data-id="5777b3b9" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-button-wrapper">
+                                    <a class="elementor-button elementor-button-link elementor-size-lg" href="https://wa.me/5512981655502?text=Olá! Gostaria de solicitar meu teste de 24 horas do IPTV. Podem me ajudar?" target="_blank" id="botaum">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">CONTRATAR PLANO</span>
+					</span>
+					</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-108f8c83 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="108f8c83" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5de11141" data-id="5de11141" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-1b7bb3a elementor-widget elementor-widget-heading" data-id="1b7bb3a" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">FAÇA AGORA SEU TESTE DE 24 HORAS E NÃO PERCA TEMPO.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="speculationrules">
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/wordpress\/iptv\/IP1010\/*"},{"not":{"href_matches":["\/wordpress\/iptv\/IP1010\/wp-*.php","\/wordpress\/iptv\/IP1010\/wp-admin\/*","\/wordpress\/iptv\/IP1010\/wp-content\/uploads\/*","\/wordpress\/iptv\/IP1010\/wp-content\/*","\/wordpress\/iptv\/IP1010\/wp-content\/plugins\/*","\/wordpress\/iptv\/IP1010\/wp-content\/themes\/hello-elementor\/*","\/wordpress\/iptv\/IP1010\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,
+        .no-prefetch a"}}]},"eagerness":"conservative"}]}
+    </script>
+    <div id="wa"></div>
+    <script>
+        const lazyloadRunObserver = () => {
+            const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+            const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        let lazyloadBackground = entry.target;
+                        if (lazyloadBackground) {
+                            lazyloadBackground.classList.add('e-lazyloaded');
+                        }
+                        lazyloadBackgroundObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '200px 0px 200px 0px'
+            });
+            lazyloadBackgrounds.forEach((lazyloadBackground) => {
+                lazyloadBackgroundObserver.observe(lazyloadBackground);
+            });
+        };
+        const events = [
+            'DOMContentLoaded',
+            'elementor/lazyload/observe',
+        ];
+        events.forEach((event) => {
+            document.addEventListener(event, lazyloadRunObserver);
+        });
+    </script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/whatsapp-Loja-dos-scripts/assets/dist/js/njt-whatsapp.js?ver=3.2.2" id="nta-wa-libs-js"></script>
+    <script id="nta-js-global-js-extra">
+        var njt_wa_global = {
+            "ajax_url": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-admin\/admin-ajax.php",
+            "nonce": "c37f70572f",
+            "defaultAvatarSVG": "<svg width=\"48px\" height=\"48px\" class=\"nta-whatsapp-default-avatar\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n            viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\">\n            <path style=\"fill:#EDEDED;\" d=\"M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0\n            S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z\"\/>\n            <path style=\"fill:#55CD6C;\" d=\"M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662\n            c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234\n            c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z\"\/>\n            <path style=\"fill:#FEFEFE;\" d=\"M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297\n            c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048\n            c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359\n            c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248\n            c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062\n            l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945\"\/>\n        <\/svg>",
+            "defaultAvatarUrl": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-content\/plugins\/whatsapp-Loja-dos-scripts\/assets\/img\/whatsapp_logo.svg",
+            "timezone": "America\/Sao_Paulo",
+            "i18n": {
+                "online": "Online",
+                "offline": "Offline"
+            },
+            "urlSettings": {
+                "onDesktop": "api",
+                "onMobile": "api",
+                "openInNewTab": "ON"
+            }
+        };
+    </script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/whatsapp-Loja-dos-scripts/assets/js/whatsapp-button.js?ver=3.2.2" id="nta-js-global-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.29.2" id="elementor-webpack-runtime-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.29.2" id="elementor-frontend-modules-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script id="elementor-frontend-js-before">
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Compartilhar no Facebook",
+                "shareOnTwitter": "Compartilhar no Twitter",
+                "pinIt": "Fixar",
+                "download": "Baixar",
+                "downloadImage": "Baixar imagem",
+                "fullscreen": "Tela cheia",
+                "zoom": "Zoom",
+                "share": "Compartilhar",
+                "playVideo": "Reproduzir v\u00eddeo",
+                "previous": "Anterior",
+                "next": "Pr\u00f3ximo",
+                "close": "Fechar",
+                "a11yCarouselPrevSlideMessage": "Slide anterior",
+                "a11yCarouselNextSlideMessage": "Pr\u00f3ximo slide",
+                "a11yCarouselFirstSlideMessage": "Este \u00e9 o primeiro slide",
+                "a11yCarouselLastSlideMessage": "Este \u00e9 o \u00faltimo slide",
+                "a11yCarouselPaginationBulletMessage": "Ir para o slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Dispositivos m\u00f3veis no modo retrato",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Dispositivos m\u00f3veis no modo paisagem",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet no modo retrato",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet no modo paisagem",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Notebook",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Tela ampla (widescreen)",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                },
+                "hasCustomBreakpoints": false
+            },
+            "version": "3.29.2",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_font_icon_svg": true,
+                "additional_custom_breakpoints": true,
+                "container": true,
+                "e_local_google_fonts": true,
+                "theme_builder_v2": true,
+                "hello-theme-header-footer": true,
+                "nested-elements": true,
+                "editor_v2": true,
+                "home_screen": true,
+                "cloud-library": true,
+                "e_opt_in_v4_page": true
+            },
+            "urls": {
+                "assets": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-content\/plugins\/elementor\/assets\/",
+                "ajaxurl": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-admin\/admin-ajax.php",
+                "uploadUrl": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-content\/uploads"
+            },
+            "nonces": {
+                "floatingButtonsClickTracking": "ae086f29c3"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description",
+                "hello_header_logo_type": "title",
+                "hello_header_menu_layout": "horizontal",
+                "hello_footer_logo_type": "logo"
+            },
+            "post": {
+                "id": 88,
+                "title": "Landing%20Page%20IPTV-COD-IP1010%20%E2%80%93%20A%20melhor%20lista%20de%20s%C3%A9ries%20e%20canais%21",
+                "excerpt": "",
+                "featuredImage": false
+            }
+        };
+    </script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.29.2" id="elementor-frontend-js"></script>
+    <script id="nta-js-popup-js-extra">
+        var njt_wa = {
+            "gdprStatus": "",
+            "accounts": [{
+                "accountId": 187,
+                "accountName": "Falar com suporte",
+                "avatar": "",
+                "number": "+5512981655502",
+                "title": "",
+                "predefinedText": "Olá! Preciso de ajuda com o IPTV. Podem me ajudar?",
+                "willBeBackText": "I will be back in [njwa_time_work]",
+                "dayOffsText": "Eu voltarei em breve",
+                "isAlwaysAvailable": "ON",
+                "daysOfWeekWorking": {
+                    "sunday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    },
+                    "monday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    },
+                    "tuesday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    },
+                    "wednesday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    },
+                    "thursday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    },
+                    "friday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    },
+                    "saturday": {
+                        "isWorkingOnDay": "OFF",
+                        "workHours": [{
+                            "startTime": "08:00",
+                            "endTime": "17:30"
+                        }]
+                    }
+                }
+            }],
+            "options": {
+                "display": {
+                    "displayCondition": "excludePages",
+                    "includePages": [],
+                    "excludePages": [],
+                    "showOnDesktop": "ON",
+                    "showOnMobile": "ON",
+                    "time_symbols": "h:m"
+                },
+                "styles": {
+                    "title": "Iniciar uma conversa",
+                    "responseText": "A equipe normalmente responde em alguns minutos.",
+                    "description": "Oi! Clique em um de nossos membros abaixo para conversar <strong>WhatsApp<\/strong>",
+                    "backgroundColor": "#2db742",
+                    "textColor": "#fff",
+                    "scrollHeight": "500",
+                    "isShowScroll": "OFF",
+                    "isShowResponseText": "OFF",
+                    "isShowPoweredBy": "OFF",
+                    "btnLabel": "Precisa de ajuda? ",
+                    "btnLabelWidth": "156",
+                    "btnPosition": "right",
+                    "btnLeftDistance": "30",
+                    "btnRightDistance": "30",
+                    "btnBottomDistance": "30",
+                    "isShowBtnLabel": "ON",
+                    "isShowGDPR": "OFF",
+                    "gdprContent": "Por favor, aceite nosso <a href=\"https:\/\/ninjateam.org\/privacy-policy\/\">pol\u00edtica de Privacidade<\/a> primeiro a iniciar uma conversa."
+                },
+                "analytics": {
+                    "enabledGoogle": "OFF",
+                    "enabledFacebook": "OFF"
+                }
+            }
+        };
+    </script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/whatsapp-Loja-dos-scripts/assets/js/whatsapp-popup.js?ver=6.8.1" id="nta-js-popup-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.29.2" id="elementor-pro-webpack-runtime-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script id="wp-i18n-js-after">
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+    </script>
+    <script id="elementor-pro-frontend-js-before">
+        var ElementorProFrontendConfig = {
+            "ajaxurl": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-admin\/admin-ajax.php",
+            "nonce": "09f3b41467",
+            "urls": {
+                "assets": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-content\/plugins\/elementor-pro\/assets\/",
+                "rest": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/index.php\/wp-json\/"
+            },
+            "settings": {
+                "lazy_load_background_images": true
+            },
+            "popup": {
+                "hasPopUps": false
+            },
+            "shareButtonsNetworks": {
+                "facebook": {
+                    "title": "Facebook",
+                    "has_counter": true
+                },
+                "twitter": {
+                    "title": "Twitter"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "has_counter": true
+                },
+                "pinterest": {
+                    "title": "Pinterest",
+                    "has_counter": true
+                },
+                "reddit": {
+                    "title": "Reddit",
+                    "has_counter": true
+                },
+                "vk": {
+                    "title": "VK",
+                    "has_counter": true
+                },
+                "odnoklassniki": {
+                    "title": "OK",
+                    "has_counter": true
+                },
+                "tumblr": {
+                    "title": "Tumblr"
+                },
+                "digg": {
+                    "title": "Digg"
+                },
+                "skype": {
+                    "title": "Skype"
+                },
+                "stumbleupon": {
+                    "title": "StumbleUpon",
+                    "has_counter": true
+                },
+                "mix": {
+                    "title": "Mix"
+                },
+                "telegram": {
+                    "title": "Telegram"
+                },
+                "pocket": {
+                    "title": "Pocket",
+                    "has_counter": true
+                },
+                "xing": {
+                    "title": "XING",
+                    "has_counter": true
+                },
+                "whatsapp": {
+                    "title": "WhatsApp"
+                },
+                "email": {
+                    "title": "Email"
+                },
+                "print": {
+                    "title": "Print"
+                },
+                "x-twitter": {
+                    "title": "X"
+                },
+                "threads": {
+                    "title": "Threads"
+                }
+            },
+            "facebook_sdk": {
+                "lang": "pt_BR",
+                "app_id": ""
+            },
+            "lottie": {
+                "defaultAnimationUrl": "https:\/\/temastotal.com.br\/wordpress\/iptv\/IP1010\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+            }
+        };
+    </script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.29.2" id="elementor-pro-frontend-js"></script>
+    <script src="https://temastotal.com.br/wordpress/iptv/IP1010/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.29.2" id="pro-elements-handlers-js"></script>
+</body>
+
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 7.2 on 2025-10-02 21:42:25 -->
