@@ -997,7 +997,70 @@
                         <div class="elementor-element elementor-element-97028aa e-grid e-con-full e-con e-parent" data-id="97028aa" data-element_type="container">
                             <div class="elementor-element elementor-element-84065f9 elementor-widget elementor-widget-image" data-id="84065f9" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <img fetchpriority="high" decoding="async" width="800" height="266" src="matflix-logo-horizontal.svg" class="attachment-large size-large wp-image-143" alt="MATFLIX Logo" style="max-width: 350px; height: auto; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));" /> </div>
+                                    <svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 350px; height: auto; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));" alt="MATFLIX Logo">
+  <defs>
+    <!-- Gradiente sutil para o fundo -->
+    <linearGradient id="subtleGradientInline" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.85" />
+      <stop offset="50%" style="stop-color:#2d2d2d;stop-opacity:0.75" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0.85" />
+    </linearGradient>
+    
+    <!-- Gradiente para o texto -->
+    <linearGradient id="textGradientInline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#ff6600;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#FF3C00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filtro para sombra suave -->
+    <filter id="softShadowInline" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    
+    <!-- Filtro para brilho no texto -->
+    <filter id="textGlowInline" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fundo sutil com bordas arredondadas -->
+  <rect width="600" height="200" rx="25" ry="25" fill="url(#subtleGradientInline)" filter="url(#softShadowInline)" opacity="0.9"/>
+  
+  <!-- Borda sutil -->
+  <rect width="596" height="196" x="2" y="2" rx="23" ry="23" fill="none" stroke="url(#textGradientInline)" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Texto MATFLIX principal -->
+  <text x="300" y="120" 
+        font-family="Arial Black, Helvetica, sans-serif" 
+        font-size="72" 
+        font-weight="900" 
+        text-anchor="middle" 
+        fill="url(#textGradientInline)" 
+        filter="url(#textGlowInline)"
+        style="letter-spacing: 6px;">
+    MATFLIX
+  </text>
+  
+  <!-- Linha decorativa esquerda -->
+  <line x1="80" y1="100" x2="200" y2="100" stroke="url(#textGradientInline)" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Linha decorativa direita -->
+  <line x1="400" y1="100" x2="520" y2="100" stroke="url(#textGradientInline)" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Pontos decorativos -->
+  <circle cx="60" cy="100" r="4" fill="#ff6600" opacity="0.8"/>
+  <circle cx="540" cy="100" r="4" fill="#FF3C00" opacity="0.8"/>
+  
+  <!-- Ícones de play decorativos -->
+  <polygon points="70,90 85,100 70,110" fill="#ff6600" opacity="0.8"/>
+  <polygon points="530,90 515,100 530,110" fill="#FF3C00" opacity="0.8"/>
+</svg> </div>
                             </div>
                             <div class="elementor-element elementor-element-98dc6c6 elementor-widget elementor-widget-heading" data-id="98dc6c6" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
@@ -1038,7 +1101,7 @@
                         <div class="elementor-element elementor-element-38034ad7 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="38034ad7" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5512981655502?text=Olá! Gostaria de solicitar meu teste de 24 horas do IPTV. Podem me ajudar?" target="_blank" id="botaum">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://typebot.co/my-typebot-vqegjrr" target="_blank" id="botao-teste-24h-1">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">QUERO MEU TESTE DE 24 HORAS</span>
 					</span>
@@ -1300,7 +1363,7 @@
                         <div class="elementor-element elementor-element-41c649f1 elementor-mobile-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="41c649f1" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5512981655502?text=Olá! Gostaria de solicitar meu teste de 24 horas do IPTV. Podem me ajudar?" target="_blank">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://typebot.co/my-typebot-vqegjrr" target="_blank" id="botao-teste-24h-2">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">QUERO MEU TESTE DE 24 HORAS</span>
 					</span>
@@ -1346,7 +1409,7 @@
                                         </div>
                                         <div class="elementor-element elementor-element-74fad0c2 elementor-widget elementor-widget-text-editor" data-id="74fad0c2" data-element_type="widget" data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <p><span style="color: #ff6600;">R$19,90</span></p>
+                                                <p><span style="color: #ff6600;">R$10,00</span></p>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-6a98fc06 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6a98fc06" data-element_type="widget" data-widget_type="icon-list.default">
@@ -1393,10 +1456,10 @@
                                         <div class="elementor-element elementor-element-6fa851a3 elementor-align-center elementor-widget elementor-widget-button" data-id="6fa851a3" data-element_type="widget" data-widget_type="button.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-button-wrapper">
-                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/kSxb4ba" target="_blank" id="botaum">
+                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://typebot.co/my-typebot-vqegjrr" target="_blank" id="botao-plano-mensal">
 						<span class="elementor-button-content-wrapper">
 
-									<span class="elementor-button-text">CONTRATAR PLANO</span>
+									<span class="elementor-button-text">TESTAR AGORA</span>
 					</span>
 					</a>
                                                 </div>
@@ -1414,7 +1477,7 @@
                                         </div>
                                         <div class="elementor-element elementor-element-551f03d2 elementor-widget elementor-widget-text-editor" data-id="551f03d2" data-element_type="widget" data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <p><span style="color: #ff6600;">R$49,90</span></p>
+                                                <p><span style="color: #ff6600;">R$25,00</span></p>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-35459942 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="35459942" data-element_type="widget" data-widget_type="icon-list.default">
@@ -1461,10 +1524,9 @@
                                         <div class="elementor-element elementor-element-3e1077b6 elementor-align-center elementor-widget elementor-widget-button" data-id="3e1077b6" data-element_type="widget" data-widget_type="button.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-button-wrapper">
-                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/fPFzQA8" target="_blank" id="botaum">
+                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://typebot.co/my-typebot-vqegjrr" target="_blank" id="botao-plano-trimestral">
 						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon">
-									<span class="elementor-button-text">CONTRATAR PLANO</span>
+									<span class="elementor-button-text">TESTAR AGORA</span>
 					</span>
 					</a>
                                                 </div>
@@ -1482,7 +1544,7 @@
                                         </div>
                                         <div class="elementor-element elementor-element-690b7c1e elementor-widget elementor-widget-text-editor" data-id="690b7c1e" data-element_type="widget" data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
-                                                <p><span style="color: #ff6600;">R$79,90</span></p>
+                                                <p><span style="color: #ff6600;">R$49,90</span></p>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-6d42864f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6d42864f" data-element_type="widget" data-widget_type="icon-list.default">
@@ -1529,9 +1591,9 @@
                                         <div class="elementor-element elementor-element-124d2c52 elementor-align-center elementor-widget elementor-widget-button" data-id="124d2c52" data-element_type="widget" data-widget_type="button.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-button-wrapper">
-                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/qBdU9nL" target="_blank" id="botaum">
+                                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://typebot.co/my-typebot-vqegjrr" target="_blank" id="botao-plano-anual">
 						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">CONTRATAR PLANO</span>
+									<span class="elementor-button-text">TESTAR AGORA</span>
 					</span>
 					</a>
                                                 </div>
@@ -1569,8 +1631,7 @@
                                         <div id="elementor-tab-content-4311" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-4311">
                                             <div class="elementor-accordion-item">
                                                 <div id="elementor-tab-content-2041" class="elementor-tab-content elementor-clearfix elementor-active" role="tabpanel" data-tab="1" aria-labelledby="elementor-tab-title-2041">
-                                                   <p><span style="color: #ffffff;"><span style="color: #ff6600;">Cartão de crédito </span><br /></span>
-                                                    </p>
+                                                   <p><span style="color: #ff6600;">Cartão de crédito</span></p>
                                                     <p>Pagamento via pix</p>
                                                     <p>Mercado Pago</p>
                                                 </div>
@@ -1670,9 +1731,9 @@
                         <div class="elementor-element elementor-element-5777b3b9 elementor-align-center elementor-widget elementor-widget-button" data-id="5777b3b9" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-button-link elementor-size-lg" href="https://wa.me/5512981655502?text=Olá! Gostaria de solicitar meu teste de 24 horas do IPTV. Podem me ajudar?" target="_blank" id="botaum">
+                                    <a class="elementor-button elementor-button-link elementor-size-lg" href="https://typebot.co/my-typebot-vqegjrr" target="_blank" id="botao-teste-24h-3">
 						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">CONTRATAR PLANO</span>
+									<span class="elementor-button-text">TESTAR AGORA</span>
 					</span>
 					</a>
                                 </div>
@@ -1892,7 +1953,7 @@
                 "accountId": 187,
                 "accountName": "Falar com suporte",
                 "avatar": "",
-                "number": "+5512981655502",
+                "number": "+5519988997976",
                 "title": "",
                 "predefinedText": "Olá! Preciso de ajuda com o IPTV. Podem me ajudar?",
                 "willBeBackText": "I will be back in [njwa_time_work]",
